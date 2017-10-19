@@ -1,0 +1,10 @@
+<h2>
+  Albums for: <%= @name %>
+</h2>
+<% @albums.each do |album| %>
+  <a href="<%= "http://localhost:4567/#{album}"%>">
+    <ul>
+      <%= album %>
+    </ul>
+  </a>
+<% end %>

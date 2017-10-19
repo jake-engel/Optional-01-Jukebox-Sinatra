@@ -1,1 +1,8 @@
 <h2>Artists</h2>
+<% @artists.each do |artist| %>
+  <a href="<%= "http://localhost:4567/#{artist}"%>">
+    <ul>
+      <%= artist %>
+    </ul>
+  </a>
+<% end %>
